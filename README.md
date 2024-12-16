@@ -8,7 +8,7 @@ Dans cet atelier sont concerné les systèmes d'authentification de base, l'auth
 Large programme avec 4 ateliers à réaliser mais tout à fait accessible et ne nécessitant pas de base technique particulière. Juste de l'observation et de la rigueur dans votre travail.
 
 -------------------------------------------------------------------------------------------------------
-Séquence 1 : GitHUB
+Séquence 1 :  GitHUB 
 -------------------------------------------------------------------------------------------------------
 Objectif : Création d'un Repository GitHUB pour travailler avec son projet  
 Difficulté : Très facile (~15 minutes)

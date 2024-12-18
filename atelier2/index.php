@@ -11,7 +11,7 @@ if (isset($_COOKIE['authToken']) && $_COOKIE['authToken'] === '12345') {
     exit();
 }
 
-@@ -19,7 +19,7 @@
+
     // Si ok alors on initialise le cookie sur le poste de l'utilisateur 
     if ($username === 'admin' && $password === 'secret') {
         $token = bin2hex(random_bytes(16));
@@ -20,7 +20,7 @@ if (isset($_COOKIE['authToken']) && $_COOKIE['authToken'] === '12345') {
         exit();
     } else {
         $error = "Nom d'utilisateur ou mot de passe incorrect.";
-@@ -36,15 +36,15 @@
+
 </head>
 <body>
     <h1>Atelier authentification par Cookie</h1>

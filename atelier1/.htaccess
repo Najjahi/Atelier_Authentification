@@ -1,4 +1,4 @@
-AuthName "Accès protégé"
+AuthName Accès protégé
 AuthType Basic
 AuthUserFile /home/najjahi/www/.htpasswd
 Require valid-user

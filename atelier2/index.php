@@ -18,6 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérification simple du username et de son password.
     // Si ok alors on initialise le cookie sur le poste de l'utilisateur 
     if ($username === 'admin' && $password === 'secret') {
+         $authToken = bin2hex(random_bytes(16));
+
         setcookie('authToken', '12345', time() + 60, '/', '', false, true); // Le Cookie est initialisé et valable pendant 1 heure (3600 secondes) 
         header('Location: page_admin.php'); // L'utilisateur est dirigé vers la page home.php
         exit();

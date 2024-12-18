@@ -18,8 +18,8 @@ if (isset($_COOKIE['authToken']) && !str_starts_with($_COOKIE['authToken'], 'use
     <title>Accueil</title>
 </head>
 <body>
-    <h1>Bienvenue sur la page Utilisateurateur </h1>
-    <p>Vous êtes connecté en tant qu'admin.</p>
+    <h1>Bienvenue sur la page Utilisateur </h1>
+    <p>Vous êtes connecté en tant qu'Utilisateur.</p>
     <a href="logout.php">Se déconnecter</a>
 </body>
 </html>

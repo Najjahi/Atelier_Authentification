@@ -65,6 +65,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <h1>Atelier authentification par Session</h1>
     <h3>La page <a href="page_admin.php">page_admin.php</a> de cet atelier 3 est inaccéssible tant que vous ne vous serez pas connecté avec le login 'admin' et mot de passe 'secret'</h3>
+    <p>Vous avez visité cette page d'accueil <?php echo $_SESSION['visites']; ?> fois.</p>
     <form method="POST" action="">
         <label for="username">Nom d'utilisateur :</label>
         <input type="text" id="username" name="username" required>

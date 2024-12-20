@@ -29,6 +29,7 @@ if ($_SERVER['PHP_AUTH_USER'] !== $valid_username || $_SERVER['PHP_AUTH_PW'] !==
 // Affichage selon le rôle
 if ($role === 'admin') {
     echo 'Bienvenue, administrateur ! Vous avez un accès complet à cette page.';
+    }
  ?>   
 <body>
     <h1>Bienvenue sur la page protégée</h1>

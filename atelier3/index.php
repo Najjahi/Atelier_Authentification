@@ -51,6 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $_SESSION['visites'] = 1;
        $error = "Vous avez visiter cette page ".$_SESSION['visites']."fois";
         echo $_SESSION['visites'];
+        <?php echo htmlspecialchars($_SESSION['visites']); ?>
 }
 
 }

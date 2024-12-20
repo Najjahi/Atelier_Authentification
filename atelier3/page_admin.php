@@ -3,7 +3,7 @@
 session_start();
 
 // Vérifier si l'utilisateur s'est bienconnecté
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
+if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']=== true && $_SESSION['username']=== 'admin') {
     header('Location: index.php'); // Dans le cas contraire, l'utilisateur sera redirigé vers la page de connexion
     exit();
 }

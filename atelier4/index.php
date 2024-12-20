@@ -2,6 +2,7 @@
 // Nom d'utilisateur et mot de passe corrects
 $valid_username = 'admin';
 $valid_password = 'secret';
+$role = $valid_credentials[$username]['role'];
 $valid_credentials = [
     'admin' => ['password' => 'secret', 'role' => 'admin'],
     'user'  => ['password' => 'utilisateur', 'role' => 'user']
@@ -41,7 +42,6 @@ if ($role === 'admin') {
     // Vous pouvez afficher un contenu spécifique à l'admin ici
     <?php
         
-
     
 } elseif ($role === 'user') {
     echo 'Bienvenue, utilisateur ! Vous avez un accès limité à cette page.';

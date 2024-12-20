@@ -16,8 +16,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Vérification simple des identifiants (à améliorer avec une base de données)
     if ($username === 'admin' && $password === 'secret') {
         // Stocker les informations utilisateur dans la session
-        $_SESSION['loggedin'] = true;
-        $_SESSION['username'] = $username;
+        $_SESSION['loggedin'] = true; // on cree une session loggedin et on la stock
+        $_SESSION['username'] = $username; // on cree une session username et on la stock
 
         // Rediriger vers la page protégée
         header('Location: page_admin.php');

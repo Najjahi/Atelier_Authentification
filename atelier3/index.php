@@ -6,7 +6,10 @@ session_start();
 if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
     header('Location: page_admin.php'); // Si l'utilisateur s'est déjà connecté alors il sera automatiquement redirigé vers la page protected.php
     exit();
-}
+} else {
+    if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true) {
+    header('Location: page_user.php'); // Si l'utilisateur s'est déjà connecté alors il sera automatiquement redirigé vers la page protected.php
+    exit();
 
 // Gérer le formulaire de connexion
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {

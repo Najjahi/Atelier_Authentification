@@ -43,7 +43,7 @@ if ($role === 'admin') {
     <?php
         
     
-} elseif ($role === 'user') {
+ elseif ($role === 'user') {
     echo 'Bienvenue, utilisateur ! Vous avez un accès limité à cette page.';
     // Vous pouvez afficher un contenu spécifique à l'utilisateur ici
 } else {

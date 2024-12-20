@@ -25,8 +25,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     } else {
         $error = "Nom d'utilisateur ou mot de passe incorrect.";
     }
-}
-     if ($username === 'user' && $password === 'utilisateur') {
+else  {
+    if ($username === 'user' && $password === 'utilisateur') {
         // Stocker les informations utilisateur dans la session
         $_SESSION['loggedin'] = true; // on cree une session loggedin et on la stock
         $_SESSION['username'] = $username; // on cree une session username et on la stock
@@ -34,7 +34,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Rediriger vers la page protégée
         header('Location: page_user.php');
         exit();
-    } else {
+    } 
+    else {
         $error = "Nom d'utilisateur ou mot de passe incorrect.";
     }
 }

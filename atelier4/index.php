@@ -40,7 +40,7 @@ if ($role === 'admin') {
     // Vous pouvez afficher un contenu spécifique à l'admin ici
     <?php
         
-?>
+
     
 } elseif ($role === 'user') {
     echo 'Bienvenue, utilisateur ! Vous avez un accès limité à cette page.';
@@ -50,7 +50,7 @@ if ($role === 'admin') {
 }
 ?>
 // Si les identifiants sont corrects
-?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>

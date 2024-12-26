@@ -11,9 +11,9 @@ $validUsers = [
     ]
 ];
 
-if (!isset($_SERVER['PHP_AUTH_USER']) || !isset($_SERVER['PHP_AUTH_PW'])) {
-    header('WWW-Authenticate: Basic realm="Zone Protégée"');
-    header('HTTP/1.0 401 Unauthorized');
+if (!isset($_SERVER['PHP_AUTH_USER']) || !isset($_SERVER['PHP_AUTH_PW'])) { //Contient le nom d'utilisateur + mp envoyé par le navigateur lors de l'authentification HTTP Basic.
+    header('WWW-Authenticate: Basic realm="Zone Protégée"'); // Demande au navigateur de présenter une boîte de dialogue d'authentification.
+    header('HTTP/1.0 401 Unauthorized'); //Envoie une réponse HTTP indiquant que l'utilisateur n'est pas autorisé.
     echo 'Vous devez entrer un nom d\'utilisateur et un mot de passe pour accéder à cette page.';
     exit;
 }

@@ -27,10 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Stocker les informations utilisateur dans la session
         $_SESSION['loggedin'] = true; // on cree une session loggedin et on la stock
         $_SESSION['username'] = $username; // on cree une session username et on la stock
-       
-
-        // Rediriger vers la page protégée
-        header('Location: page_admin.php');
+              
+        header('Location: page_admin.php'); // Rediriger vers la page protégée
         exit();
     } else {
         $error = "Nom d'utilisateur ou mot de passe incorrect.";
@@ -39,10 +37,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Stocker les informations utilisateur dans la session
          $_SESSION['loggedin'] = true; // on cree une session loggedin et on la stock
         $_SESSION['username'] = $username; // on cree une session username et on la stock
-       
-
-        // Rediriger vers la page protégée
-        header('Location: page_user.php');
+               
+        header('Location: page_user.php');// Rediriger vers la page non protégée
         exit();
   
     } else {
@@ -50,11 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
  }
    }
-      // $error = "Vous avez visiter cette page ".$_SESSION['visites']."fois";
-       // echo htmlspecialchars($_SESSION['visites']);
-
-
-
+      
 ?>
 
 <!DOCTYPE html>

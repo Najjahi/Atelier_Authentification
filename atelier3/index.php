@@ -50,8 +50,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
  }
    
-       $error = "Vous avez visiter cette page ".$_SESSION['visites']."fois";
-        echo htmlspecialchars($_SESSION['visites']);
+      // $error = "Vous avez visiter cette page ".$_SESSION['visites']."fois";
+       // echo htmlspecialchars($_SESSION['visites']);
 }
 
 

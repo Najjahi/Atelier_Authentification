@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "Nom d'utilisateur ou mot de passe incorrect.";
     }
  }
-   
+   }
       // $error = "Vous avez visiter cette page ".$_SESSION['visites']."fois";
        // echo htmlspecialchars($_SESSION['visites']);
 

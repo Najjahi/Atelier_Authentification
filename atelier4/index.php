@@ -21,14 +21,14 @@ if (!isset($_SERVER['PHP_AUTH_USER']) || !isset($_SERVER['PHP_AUTH_PW'])) { //Co
 $username = $_SERVER['PHP_AUTH_USER'];
 $password = $_SERVER['PHP_AUTH_PW'];
 
-if (!isset($validUsers[$username]) || $validUsers[$username]['password'] !== $password) {
+if (!isset($validUsers[$username]) || $validUsers[$username]['password'] !== $password) { // Si le nom d'utilisateur n'existe pas et le mp fourni par l'utilisateur ne correspond pas à celui stocké dans le tableau, l'authentification échoue.
     header('WWW-Authenticate: Basic realm="Zone Protégée"');
     header('HTTP/1.0 401 Unauthorized');
     echo 'Nom d\'utilisateur ou mot de passe incorrect.';
     exit;
 }
 
-$userRole = $validUsers[$username]['role'];
+$userRole = $validUsers[$username]['role']; //  le rôle de l'utilisateur est récupéré depuis le tableau $validUsers et stocké dans la variable $userRole
 
 ?>
 <!DOCTYPE html>

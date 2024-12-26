@@ -1,6 +1,11 @@
 <?php
 // Démarre la session
 session_start();
+// Gérer le compteur de visites
+ if (isset($_SESSION['visites'])) {   
+    $_SESSION['visites']++;
+} else {
+       $_SESSION['visites'] = 1;
 
 // Vérifier si l'utilisateur est déjà connecté
 
@@ -44,13 +49,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = "Nom d'utilisateur ou mot de passe incorrect.";
     }
  }
-    if (isset($_SESSION['visites'])) {   
-    $_SESSION['visites']++;
-} else {
-       $_SESSION['visites'] = 1;
+   
        $error = "Vous avez visiter cette page ".$_SESSION['visites']."fois";
         echo htmlspecialchars($_SESSION['visites']);
 }
+
+
 ?>
 
 <!DOCTYPE html>

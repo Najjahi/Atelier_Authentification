@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atelier 1</title>
+</head>
+<body>
+<h1>Bienvenue dans votre atelier 1</h1>
+<h2>Votre objectif est de sécuriser l'accès à cette page via une solution d'authentification basique (Basic Auth)</h2>
+<p>Pour sécuriser une page web avec un système d'authentification basique, vous devez configurer votre serveur web pour exiger la saisie d'un nom d'utilisateur et d'un mot de passe</p>
+<p>Tout ce dont vous avez besion de savoir se trouve ici : <a href="https://help.alwaysdata.com/fr/sites/fichier-htaccess/#protéger-un-répertoire-par-un-mot-de-passe" target="_blank">Lien d'aide</a></a></p></p>
+<p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+<h3>Ce que nous dit l'aide en ligne d'Alwaysdata :</h3>
+<p><u>Etape 1 :</u> Il faut créer dans le répertoire à protéger un fichier <b>.htaccess</b> contenant le code suivant
+<pre><code><xmp>
+AuthName "Accès protégé"
+AuthType Basic
+AuthUserFile /home/{votre_compte_Alwaysdata}/www/.htpasswd
+Require valid-user
+</xmp></code></pre><u>Attention :</u> la chaine {votre_compte_Alwaysdata} est à remplacer par votre compte Alwaysdata.</p>
+<p><u>Etape 2 :</u> Création d'un fichier <b>.htpasswd</b> à la racine de notre serveur (c'est à dire, dans notre cas, à la racine de notre repository GitHub), contenant les couples d'identifiants et mots de passes autorisés à ce connecter à notre page.</p>
+<p>Pour générer le couple login/password contenu dans le fichier .htpasswd vous pouvez utiliser la solution en ligne suivante : <a href="https://hellotools.org/fr/generer-crypter-mot-de-passe-pour-fichier-htpasswd">Générateur de fichier .htpasswd</a></p>
+<p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+<h3>Travail demandé :</h3>
+<p>Sécuriser cette page. Le login et mot passe pour pouvoir avoir accès à cette page seront : <b>login : user et Password : 1234</b></p>
+<p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+<h3>Remarque importante :</h3>
+<p>Pour cette atelier, <b>testez votre votre solution dans une fenêtre de navigation privée</b> avec votre navigateur.</p>
+<p>En effet, dans la cas contraire, votre navigateur gardera en cache vos accès et vous ne serez plus en mesure de pouvoir observer vos résultats (vos accès seront toujours autorisés)</p>
+<p>- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - </p>
+<p>Notions acquises lors de cette séquence : Bravo ! Vous avez appris au cours de cet atelier à mettre en place une solution sécurisée basée sur de l'authentification basique.</p>
+<h3>FIN DE L'ATELIER 1</h3>
+</body>
+</html>à

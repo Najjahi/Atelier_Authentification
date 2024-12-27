@@ -1,0 +1,4 @@
+AuthName "Accès protégé"
+AuthType Basic
+AuthUserFile /home/najjahi/www/atelier1/.htpasswd
+Require valid-user
